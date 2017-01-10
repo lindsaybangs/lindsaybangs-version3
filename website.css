@@ -1,0 +1,314 @@
+/***** Structure *****/
+body {
+	font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+	background: url("dark_embroidery.png") darkgray;
+}
+
+main {
+	float: left;
+	margin: 0;
+	padding: 0;
+	display: inline;
+
+	position: relative;
+	margin-left: 33.33%;
+
+	width: 66.66%;
+}
+
+/* Header */
+header {
+	color: #3F7F95;
+	text-align: center;
+
+	margin-left: 33.33%;
+}
+
+header  h1 {
+	color: white;
+	font-size: 50px;
+	padding-top: 50px;
+}
+
+header  a {
+	color: white;
+}
+
+header  ul.profile_links {
+	bottom: 0;
+}
+
+header li {
+	display: inline-block;
+	padding: 5px;
+}
+
+/* Side navigation */
+div#left_menu {
+	background: url("tree_bark.png") #3F7F95;
+
+	color: black;
+	margin: 5px;
+
+	height: 100%;
+	top: -5px;
+	bottom: 5px;
+	position: fixed;
+	width: 30%;
+}
+
+nav ul {
+	list-style: none;
+	margin-top: 0;
+}
+
+nav ul li {
+	font-size: 20px;
+}
+
+nav ul li .icon:before {
+	width: 30px;
+}
+
+nav ul a {
+	color: black;
+	text-decoration: none;
+}
+
+nav ul a:hover {
+	color: #7b002c;
+}
+
+nav h2 {
+	color: #3F7F95;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: normal;
+
+	padding-left: 40px;
+	margin-bottom: 0;
+}
+
+nav h2:after {
+	content:"...";
+}
+
+footer {
+	color: #3F7F95;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+
+/********* Sections ************/
+section {
+	background: url("seamless_paper_texture.png") lightgrey;
+
+	*-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+section h1 {	
+    padding: 5px;
+    padding-left: 15px;
+    padding-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-bottom: aliceblue 1px dashed;
+    font-size: 30px;
+}
+
+section h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+
+	color: #7b002c;
+	display: inline-block;
+}
+
+section div {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 30px;
+}
+
+section div p.info {
+	margin-top: 3px;
+	margin-bottom: 3px ;
+	padding-left: 10px;
+	border-left: darkgrey 1px dashed;
+}
+
+/* Time */
+main p.time {
+	color: indianred;
+	font-style: italic;
+	display: inline-block;
+	float: right;
+	clear: right;
+
+	margin: 0px;
+	font-size: 18px;
+}
+
+main p.time:before {
+	content: "[";
+}
+
+main p.time:after {
+	content: "]";
+}
+
+/* Links */
+main a {
+	color: black;
+}
+
+main a:hover {
+	color: #7b002c;
+}
+
+/* Icons */
+p.github_link {
+	margin: 0;
+	display: inline-block;
+}
+
+p.github_link:before {
+	padding-right: 2px;
+	font-family: FontAwesome;
+}
+
+.icon:before {
+	font-family: FontAwesome;
+	content: "";
+	text-align: center;
+	width: 40px;
+	display: inline-block;
+	font-style: normal;
+}
+
+.github_link:before 	{	content: "\f09b"; }
+.twitter_link:before 	{	content: "\f099"; }
+.insta_link:before 	 	{	content: "\f16d"; }
+.email_link:before 		{	content: "\f0e0"; }
+.about_icon:before  	{	content: "\f007"; }
+.education_icon:before 	{	content: "\f19d"; }
+.projects_icon:before 	{	content: "\f121"; }
+.experience_icon:before {	content: "\f2c1"; }
+
+/* Technology List */
+section div ul.technology {
+	display: inline;
+	padding-left: 0;
+}
+
+section div ul.technology:before {
+	content: "\f109";
+	font-family: FontAwesome;
+}
+
+section div ul.technology li {
+	display: inline-block;
+
+	border-top: 1px solid darkgrey;
+	border-bottom: 1px solid darkgrey;
+
+	background-color: aliceblue;
+}
+
+section div ul.technology li:before {
+	border-top: 1px solid darkgrey;
+	border-bottom: 1px solid darkgrey;
+	border-left: 3px solid darkgrey;
+
+	padding-left: 5px;
+	padding-right: 10px;
+
+	background-color: aliceblue;
+	color: grey;
+	content: "";
+
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+}
+
+section div ul.technology li:after {
+	border-top: 1px solid darkgrey;
+	border-bottom: 1px solid darkgrey;
+	border-right: 3px solid darkgrey;
+
+	padding-right: 15px;
+
+	background-color: aliceblue;
+
+	content: "";
+}
+
+
+/* Specific section */
+section#education dl.details {
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+
+section#education dl.details dt {
+	color: #3F7F95;
+	float: left;
+	clear: left;
+	text-align: right;
+	font-style: italic;
+	width: 130px;
+}
+
+section#education dl.details dt:after {
+	content: ":";
+}
+
+section#education dl.details dd {
+	margin-left: 135px;
+}
+
+section#projects div.project p.github_link a {
+	color: black;
+}
+
+section#experience div p.job_title {
+	color: #3F7F95;
+	font-style: italic;
+
+	padding: 5px 0;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+/* Global classes */
+.round {
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.visuallyhidden {
+	position: absolute; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height: 1px; width: 1px; 
+	margin: -1px; padding: 0; border: 0; 
+}
+
+div.profile {
+	width: 150px;
+	height: 150px;
+
+	margin: 50 auto;
+}
+
+div.profile img {
+	width: 150px;
+	height: 150px;
+
+	display: block;
+}
