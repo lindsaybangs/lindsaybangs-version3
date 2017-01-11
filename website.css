@@ -16,6 +16,11 @@ main {
 	width: 66.66%;
 }
 
+main.full {
+	margin-left: 0;
+	width: 100%;
+}
+
 /* Header */
 header {
 	color: #3F7F95;
@@ -101,6 +106,28 @@ footer {
 	text-align: center;
 }
 
+footer ul.external_links {
+	list-style: none;
+	margin-top: 0;
+}
+
+footer ul.external_links li {
+	display: inline-block;
+	font-style: normal;
+}
+
+footer ul.external_links li a {
+	color: white;
+}
+
+footer ul.external_links li a:hover {
+	color: #7b002c;
+}
+
+footer ul.external_links li.icon:before {
+	width: 30px;
+}
+
 
 /********* Sections ************/
 section {
@@ -144,7 +171,7 @@ section div p.info {
 
 /* Time */
 main p.time {
-	color: indianred;
+	color: #cd5c5c;
 	font-style: italic;
 	display: inline-block;
 	float: right;
@@ -283,6 +310,38 @@ section#experience div p.job_title {
 	padding: 5px 0;
 	margin-top: 3px;
 	margin-bottom: 3px;
+}
+
+section#grades_summary {
+	color: red;
+	padding: 30px;
+}
+
+section#grades_summary dl.details {
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+
+section#grades_summary dl.details dt {
+	color: #3F7F95;
+	float: left;
+	clear: left;
+	text-align: right;
+	font-style: italic;
+	width: 300px;
+}
+
+section#grades_summary dl.details dt:after {
+	content: ":";
+}
+
+section#grades_summary dl.details dd {
+	margin-left: 135px;
+}
+
+section#grades_full {
+	color: blue;
+	padding: 15px;
 }
 
 /* Global classes */
