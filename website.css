@@ -240,41 +240,10 @@ section div ul.technology:before {
 
 section div ul.technology li {
 	display: inline-block;
-
-	border-top: 1px solid darkgrey;
-	border-bottom: 1px solid darkgrey;
-
+	border: thin solid darkgrey;
 	background-color: aliceblue;
+	padding: 5px 10px;
 }
-
-section div ul.technology li:before {
-	border-top: 1px solid darkgrey;
-	border-bottom: 1px solid darkgrey;
-	border-left: 3px solid darkgrey;
-
-	padding-left: 5px;
-	padding-right: 10px;
-
-	background-color: aliceblue;
-	color: grey;
-	content: "";
-
-	border-top-left-radius: 50%;
-	border-bottom-left-radius: 50%;
-}
-
-section div ul.technology li:after {
-	border-top: 1px solid darkgrey;
-	border-bottom: 1px solid darkgrey;
-	border-right: 3px solid darkgrey;
-
-	padding-right: 15px;
-
-	background-color: aliceblue;
-
-	content: "";
-}
-
 
 /* Specific section */
 section#education dl.details {
@@ -300,7 +269,16 @@ section#education dl.details dd {
 }
 
 section#projects div.project p.github_link a {
-	color: black;
+	color: white;
+	background-color: #3F7F95;
+	border: thin dashed white;
+	padding: 5px 10px;
+
+	margin-right: 15px;
+}
+
+section#projects div.project p.github_link a:hover {
+	color: #7b002c;
 }
 
 section#experience div p.job_title {

@@ -37,7 +37,7 @@ main table caption {
 
 	color: #3F7F95;
 
-	font-size: 20px;
+	font-size: 35px;
 	font-style: italic;
 }
 
@@ -46,6 +46,7 @@ main table tr th {
 	color: white;
 	background-color: black;
 
+	text-align: left;
 	font-size: 16px;
 }
 
@@ -61,6 +62,13 @@ main table tr td {
 
 footer {
 	position: static;
+}
 
-	margin-top: 25px;
+footer ul li {
+	padding-top: 50px;
+}
+
+footer .icon:before {
+	width: 30px;
+	padding-left: 10px;
 }
